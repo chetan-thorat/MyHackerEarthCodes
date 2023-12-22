@@ -1,0 +1,17 @@
+----> Solution
+
+
+def just(n,my_str):
+    string = ""
+    converted_data = my_str.replace('.','B')
+    string = string + converted_data
+    return(string)
+
+n = int(input())
+my_str = input()
+if 'HH' in my_str:
+    print("NO")
+else:
+    print("YES")
+    boss = just(n,my_str)
+    print(boss)
