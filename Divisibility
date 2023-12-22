@@ -1,0 +1,20 @@
+-----> Solution
+
+def check_this(N,A):
+    boss = ""
+    for i in A:
+        i = str(i)
+        curr = i[-1]
+        boss = boss + curr
+    boss = int(boss)
+    
+    if boss%10==0:
+        return "Yes"
+    else:
+        return "No"
+
+
+N = int(input())
+A = list(map(int, input().split()))
+result = check_this(N,A)
+print(result)
