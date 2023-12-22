@@ -1,0 +1,18 @@
+
+---> Solution   
+
+
+
+def toggle(s):
+    st = ""
+    for i in s:
+        if i.isupper():
+            st = st + i.lower()
+        if i.islower():
+            st = st + i.upper()
+    return st
+
+
+s = input()
+boss = toggle(s)
+print(boss)
