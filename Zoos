@@ -1,0 +1,14 @@
+---->  Solution
+
+input_ = input()
+z = 0
+o = 0
+for i in input_:
+    if i=="z":
+        z = z+1    # Always remeber o's are twice of z's bro
+    if i=="o":
+        o = o+1
+if o == 2*z:
+    print("Yes")
+else:
+    print("No")
