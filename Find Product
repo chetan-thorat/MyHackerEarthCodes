@@ -1,0 +1,9 @@
+N = int(input())
+answer = 1
+
+A = list(map(int, input().split()))
+
+for each in A:
+    answer = (answer*each)%(10**9+7)
+
+print(answer)
