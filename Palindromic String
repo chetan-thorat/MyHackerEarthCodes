@@ -1,0 +1,9 @@
+def palindrome(s):
+    if s == s[::-1]:
+        return "YES"
+    else:
+        return "NO"
+        
+s = input()
+result = palindrome(s)
+print(result)
