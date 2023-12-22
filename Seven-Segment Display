@@ -1,0 +1,22 @@
+---->  Solution
+
+T = int(input())
+sticks = [6,2,5,5,4,5,6,3,7,6]
+
+for i in range(T):
+    number = input()
+
+
+    
+    total = sum(sticks[int(each)] for each in number)
+
+
+    #total = 0
+    #for each in number:                         # This simplification for above total = sum..... but don't write that it shows "timeerror"
+      #total = total + sticks[int(each)]
+
+
+    if total % 2==0:
+        print('1'*int(total//2))
+    else:
+        print('7'+'1'*int((total//2)-1))
